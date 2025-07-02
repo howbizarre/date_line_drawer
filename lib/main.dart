@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
+    _selectedDate1 = DateTime(1976, 5, 7);
     _controller = AnimationController(
       vsync: this,
     );
@@ -163,9 +164,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   color: Colors.white, // Background color for the shadow to be visible
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withAlpha((255 * 0.5).round()),
+                      color: Colors.grey.withAlpha((255 * 0.25).round()),
                       spreadRadius: 5,
-                      blurRadius: 7,
+                      blurRadius: 17,
                       offset: const Offset(0, 3), // changes position of shadow
                     ),
                   ],
