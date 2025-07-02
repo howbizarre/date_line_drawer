@@ -1,4 +1,3 @@
-
 # Chat History
 
 ## User
@@ -276,3 +275,89 @@ Hot Reload е една от най-мощните функции на Flutter з
 И накрая, ще променя продължителността на анимацията на 500 милисекунди.
 
 > Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+## User
+
+В календарите промени понеделник като първи ден от седмицата. Текста 'Points of Destini' го намали още и махни двете точки. dateResult го нарпави с червен цвят. Квадрата с точките му добави отсянка, за да изглежда, че изпъква леко над останалата част.
+
+## Gemini
+
+Разбира се, ще направя тези промени.
+
+1.  **Понеделник като първи ден от седмицата:** Ще променя `showDatePicker` да използва локализация, която започва седмицата от понеделник.
+2.  **Текст "Points of Destiny":** Ще намаля размера на шрифта и ще премахна двоеточието.
+3.  **Цвят на `dateResult`:** Ще го направя червен.
+4.  **Сянка на квадрата с точките:** Ще добавя сянка около `CustomPaint` уиджета.
+
+Първо, ще прочета файла `lib/main.dart`.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще направя промените във файла `lib/main.dart`.
+
+Първо, ще променя `showDatePicker` да използва понеделник като първи ден от седмицата. За целта ще трябва да импортирам `intl` пакета, за да използвам `MaterialLocalizations`.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще променя `pubspec.yaml`, за да добавя `flutter_localizations` като зависимост. Това е необходимо, за да можем да променяме локализацията на календара.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/pubspec.yaml`
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/pubspec.yaml`
+
+Сега ще изпълня `flutter pub get`, за да изтегля новата зависимост.
+
+> Executed `flutter pub get` in `date_line_drawer`
+
+Сега, след като добавих `flutter_localizations`, трябва да го импортирам в `main.dart` и да го конфигурирам в `MaterialApp`. Също така ще променя стила на текста "Points of Destiny" и ще добавя сянка на `CustomPaint`.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+## User
+
+Error: No named parameter with the name 'firstDayOfWeek'.      firstDayOfWeek: DateTime.monday,      ^^^^^^^^^^^^^^/C:/Users/User/flutter/packages/flutter/lib/src/material/date_picker.dart:196:19: Context: Found this candidate, but the arguments don't match.Future<DateTime?> showDatePicker({                  ^^^^^^^^^^^^^^Waiting for connection from debug service on Chrome...             11,9sFailed to compile application.
+
+## Gemini
+
+Разбирам, че има грешка при компилацията, свързана с `firstDayOfWeek`. Моя грешка, този параметър вече не съществува в по-новите версии на Flutter. Първият ден от седмицата се контролира чрез локализацията.
+
+Вече добавих `flutter_localizations` и конфигурирах `MaterialApp` да поддържа български език, който по подразбиране започва седмицата от понеделник.
+
+Сега ще премахна грешния параметър `firstDayOfWeek` от `showDatePicker` в `lib/main.dart`.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+## User
+
+Discard all changes that have not been committed to GitHub
+
+## Gemini
+
+Разбирам. За да изхвърля всички промени, които не са били комитени в Git, ще използвам командата `git reset --hard`.
+
+**Внимание:** Тази команда ще изтрие **всички** незапазени промени във файловете и ще върне проекта до последното комитено състояние. Уверете се, че нямате важни промени, които искате да запазите.
+
+Ако сте сигурни, че искате да продължите, ще изпълня следната команда:
+`git reset --hard`
+
+> Executed `git reset --hard` (failed, not a git repository)
+
+Извинявам се, но изглежда, че текущата директория `D:\Dev\FLUTTER` или поддиректорията `date_line_drawer` не е инициализирана като Git хранилище. Командата `git reset --hard` работи само в Git хранилища.
+
+Моля, потвърдете дали искате да продължа с ръчно изтриване/заместване на файловете, или ако проектът е Git хранилище, моля, уверете се, че сте в правилната директория.
+
+## User
+
+Влез в директорията на проекта
+
+## Gemini
+
+Разбира се. Ще вляза в директорията на проекта `date_line_drawer`.
+
+> Executed `cd date_line_drawer`
+
+Добре, вече съм в директорията `D:\Dev\FLUTTER\date_line_drawer`.
+
+Сега ще опитам отново да изхвърля всички незапазени промени с `git reset --hard`.
+
+> Executed `git reset --hard` in `date_line_drawer`
