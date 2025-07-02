@@ -52,7 +52,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   Future<void> _selectDate(BuildContext context, int dateNumber) async {
     final DateTime? picked = await showDatePicker(
       context: context,
-      initialDate: DateTime.now(),
+      initialDate: dateNumber == 1
+          ? (_selectedDate1 ?? DateTime.now())
+          : (_selectedDate2 ?? DateTime.now()),
       firstDate: DateTime(1),
       lastDate: DateTime(9999),
     );
