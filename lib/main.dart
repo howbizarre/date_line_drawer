@@ -202,7 +202,7 @@ class LinePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.blue
+      ..color = Colors.black
       ..strokeWidth = 2;
 
     final double side = size.width < size.height ? size.width : size.height;
