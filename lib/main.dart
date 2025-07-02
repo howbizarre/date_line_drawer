@@ -103,18 +103,38 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: () => _selectDate(context, 1),
-                  child: Text(_selectedDate1 == null
-                      ? 'Set your Birth Day'
-                      : "${_selectedDate1!.day.toString().padLeft(2, '0')}-${_selectedDate1!.month.toString().padLeft(2, '0')}-${_selectedDate1!.year}"),
+                Column(
+                  children: [
+                    Text(
+                      _selectedDate1 == null
+                          ? 'DD-MM-YYYY'
+                          : 'Your Birthday',
+                    ),
+                    const SizedBox(height: 8),
+                    ElevatedButton(
+                      onPressed: () => _selectDate(context, 1),
+                      child: Text(_selectedDate1 == null
+                          ? 'Set your Birth Day'
+                          : '${_selectedDate1!.day.toString().padLeft(2, '0')}-${_selectedDate1!.month.toString().padLeft(2, '0')}-${_selectedDate1!.year}'),
+                    ),
+                  ],
                 ),
                 const SizedBox(width: 20),
-                ElevatedButton(
-                  onPressed: _selectedDate1 == null ? null : () => _selectDate(context, 2),
-                  child: Text(_selectedDate2 == null
-                      ? 'Set Date of Interest'
-                      : "${_selectedDate2!.day.toString().padLeft(2, '0')}-${_selectedDate2!.month.toString().padLeft(2, '0')}-${_selectedDate2!.year}"),
+                Column(
+                  children: [
+                    Text(
+                      _selectedDate2 == null
+                          ? 'DD-MM-YYYY'
+                          : 'Date of Interest',
+                    ),
+                    const SizedBox(height: 8),
+                    ElevatedButton(
+                      onPressed: _selectedDate1 == null ? null : () => _selectDate(context, 2),
+                      child: Text(_selectedDate2 == null
+                          ? 'Set Date of Interest'
+                          : '${_selectedDate2!.day.toString().padLeft(2, '0')}-${_selectedDate2!.month.toString().padLeft(2, '0')}-${_selectedDate2!.year}'),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -134,17 +154,34 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-            Expanded(
-                child: AnimatedBuilder(
-                  animation: _animation,
-                  builder: (context, child) {
-                    return CustomPaint(
-                      painter: LinePainter(_path, _animation.value),
-                      child: Container(),
-                    );
-                  },
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white, // Background color for the shadow to be visible
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: const Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
+                ),
+                child: SizedBox(
+                  width: 250, // Adjust size as needed
+                  height: 250, // Adjust size as needed
+                  child: AnimatedBuilder(
+                    animation: _animation,
+                    builder: (context, child) {
+                      return CustomPaint(
+                        painter: LinePainter(_path, _animation.value),
+                        child: Container(),
+                      );
+                    },
+                  ),
                 ),
               ),
+            ),
           ],
         ),
       ),
