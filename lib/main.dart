@@ -124,11 +124,11 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 child: Text.rich(
                   TextSpan(
                     text: 'Points of Destiny ',
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.black),
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.black),
                     children: <TextSpan>[
                       TextSpan(
                         text: '${_dateResult ?? ''}',
-                        style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.red),
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.red),
                       ),
                     ],
                   ),
