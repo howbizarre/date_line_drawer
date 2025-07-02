@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       setState(() {
         _dateResult = date1Int + date2Int;
         _path = _dateResult.toString().split('').map((e) => int.parse(e)).where((e) => e != 0).toList();
-        _controller.duration = Duration(milliseconds: 250 * (_path.length - 1));
+        _controller.duration = Duration(milliseconds: 500 * (_path.length - 1));
         _startAnimation();
       });
     }
@@ -118,16 +118,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 ),
               ],
             ),
-            if (_dateResult != null)
-              Padding(
+            Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
-                  'Points of Destiny: $_dateResult',
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  'Points of Destiny: ${_dateResult ?? ''}',
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
-            if (_dateResult != null)
-              Expanded(
+            Expanded(
                 child: AnimatedBuilder(
                   animation: _animation,
                   builder: (context, child) {
