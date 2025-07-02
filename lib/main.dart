@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -160,7 +160,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   color: Colors.white, // Background color for the shadow to be visible
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
+                      color: Colors.grey.withAlpha((255 * 0.5).round()),
                       spreadRadius: 5,
                       blurRadius: 7,
                       offset: const Offset(0, 3), // changes position of shadow
