@@ -1,3 +1,4 @@
+
 # Chat History
 
 ## User
@@ -361,3 +362,21 @@ Discard all changes that have not been committed to GitHub
 Сега ще опитам отново да изхвърля всички незапазени промени с `git reset --hard`.
 
 > Executed `git reset --hard` in `date_line_drawer`
+
+## User
+
+Намали размера на 'Points of Destiny' и махни двуеточието.
+
+## Gemini
+
+Разбира се, ще намаля размера на текста "Points of Destiny" и ще премахна двоеточието.
+
+Първо, ще прочета файла `lib/main.dart`.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще променя текста "Points of Destiny: " на "Points of Destiny" и ще намаля размера на шрифта му.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`

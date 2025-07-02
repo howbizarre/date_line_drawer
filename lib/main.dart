@@ -118,11 +118,20 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 ),
               ],
             ),
+            const SizedBox(height: 40),
             Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Text(
-                  'Points of Destiny: ${_dateResult ?? ''}',
-                  style: Theme.of(context).textTheme.titleLarge,
+                child: Text.rich(
+                  TextSpan(
+                    text: 'Points of Destiny ',
+                    style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.black),
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: '${_dateResult ?? ''}',
+                        style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.red),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             Expanded(
