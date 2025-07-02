@@ -1,4 +1,3 @@
-
 # Chat History
 
 ## User
@@ -54,3 +53,193 @@ Got it. Thanks for the context!
 
 Запази хронологията от чата във файл в проекта
 
+## Gemini
+
+Разбира се. Ще запазя хронологията на нашия разговор във файл с име `chat_history.md` в директорията на проекта.
+
+> Wrote file `D:/Dev/FLUTTER/date_line_drawer/chat_history.md`
+
+Готово. Файлът `chat_history.md` е създаден в директорията на проекта.
+
+## User
+
+Обогати README.md файла със ръководство за инсталация, разработка, диплой и начина на използване.
+
+## Gemini
+
+Добре, ще обновя `README.md` файла с нужната информация. Първо, ще прочета съществуващото съдържание, за да го запазя.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/README.md`
+
+Сега ще добавя новите секции към `README.md` файла.
+
+> Wrote file `D:/Dev/FLUTTER/date_line_drawer/README.md`
+
+Файлът `README.md` е обновен. Имате ли други въпроси?
+
+## User
+
+Добави нов makrdown файл PROJECTSTRUCTURE.md в проекта и в него опиши всички файлове, които се ползват в проекта. За всеки файл напиши обяснение, какво съдържа и как се ползва. Опиши и коя е входната точка на проекта.
+
+## Gemini
+
+Разбира се. Ще създам файла `PROJECTSTRUCTURE.md` и ще го попълня с описание на файловата структура на проекта.
+
+> Wrote file `D:/Dev/FLUTTER/date_line_drawer/PROJECTSTRUCTURE.md`
+
+Файлът `PROJECTSTRUCTURE.md` е създаден и попълнен. Имате ли други въпроси?
+
+## User
+
+VSCode ми казва:
+
+## Gemini
+
+Моля, довършете съобщението. Какво ви казва VSCode?
+
+## User
+
+VSCode ми казва:
+
+## Gemini
+
+Моля, довършете съобщението. Какво ви казва VSCode?
+
+## User
+
+VSCode ми казва:
+
+## Gemini
+
+Моля, довършете съобщението. Какво ви казва VSCode?
+
+## User
+
+VSCode ми казва:
+
+## Gemini
+
+Моля, довършете съобщението. Какво ви казва VSCode?
+
+## User
+
+VSCode ми казва:
+
+## Gemini
+
+Моля, довършете съобщението. Какво ви казва VSCode?
+
+## User
+
+The value of the field '_points' isn't used.Try removing the field, or using it.dartunused_fieldList<Offset> _pointsType: List<Offset>package:date_line_drawer/main.dart
+
+## Gemini
+
+Разбирам. Това е предупреждение от анализатора на Dart, което казва, че променливата `_points` е дефинирана, но стойността й никога не се използва. Това е вярно - в текущия код стойността се задава, но не се чете никъде.
+
+Ще премахна ненужния код, за да изчистя предупреждението. Първо ще прочета файла.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще премахна ненужната променлива и свързания с нея код.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще премахна и останалата част от ненужния код.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+И накрая, ще премахна параметъра от конструктора на `LinePainter`.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Премахнах и последната част от ненужния код.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Готово. Предупреждението от VSCode би трябвало да е изчезнало. Имате ли други въпроси?
+
+## User
+
+Промени етикетите на полетата за избор на дата. На първото поле да пише: Set your Birth Day, а на второ то да пише: Set Date of Interest
+
+## Gemini
+
+Добре, ще променя етикетите. Първо ще прочета файла, за да съм сигурен, че работя с актуалното съдържание.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще заменя старите етикети с новите.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще променя и втория етикет.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Готово. Етикетите са променени. Имате ли други въпроси?
+
+## User
+
+Полето под двете дата и dateResult да пише: Points of Destiny
+
+## Gemini
+
+Добре, ще променя текста. Първо ще прочета файла, за да съм сигурен, че работя с актуалното съдържание.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще заменя текста "dateResult: $_dateResult" с "Points of Destiny: $_dateResult".
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Готово. Текстът е променен на "Points of Destiny: $_dateResult". Имате ли други въпроси?
+
+## User
+
+Промени надписа най-отгоре 'Date Line Drawer' на 'Lines of Destiny'. Позиционирай го в средата и сложи малко разстояние между него и следващите полета за избор на дати.
+
+## Gemini
+
+Добре, ще променя заглавието на приложението и ще добавя разстояние. Първо ще прочета файла.
+
+> Read file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще променя заглавието на приложението и ще добавя разстояние.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Сега ще променя и `title` на `MaterialApp`.
+
+> Modified file `D:/Dev/FLUTTER/date_line_drawer/lib/main.dart`
+
+Готово. Заглавието на приложението е променено на "Lines of Destiny" и е добавено разстояние между заглавието и полетата за избор на дати. Имате ли други въпроси?
+
+## User
+
+Има ли нещо като Hot Module Reload, така че всяка промяна на кода да се отразява в приложението?
+
+## Gemini
+
+Да, Flutter има функция, наречена **Hot Reload**, която е много подобна на Hot Module Reload. Тя ви позволява да правите промени в кода си и да ги виждате незабавно отразени в работещото приложение, без да губите текущото състояние на приложението.
+
+**Как работи Hot Reload:**
+
+Когато стартирате приложението си с `flutter run`, Flutter следи за промени във файловете. Когато запазите промените си (например в VS Code), Flutter автоматично инжектира новия код във виртуалната машина на Dart, която изпълнява приложението. Това води до бързо обновяване на потребителския интерфейс, без да се налага пълно рестартиране на приложението.
+
+**За да използвате Hot Reload:**
+
+1.  Уверете се, че приложението ви работи в режим на разработка (например с `flutter run -d chrome`).
+2.  Направете промени в кода си.
+3.  Запазете файла (Ctrl+S или Cmd+S).
+4.  Промените трябва да се отразят веднага в браузъра. Ако не стане автоматично, можете да натиснете `r` в конзолата, където работи `flutter run`.
+
+Hot Reload е една от най-мощните функции на Flutter за бърза разработка.
+
+## User
+
+Обнови файла с историята на разговора ни с новите неща.
+
+## Gemini
+
+Разбира се, ще обновя файла `chat_history.md` с последните ни разговори.

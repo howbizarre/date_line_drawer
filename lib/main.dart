@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Date Line Drawer',
+      title: 'Lines of Destiny',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -92,26 +92,28 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Date Line Drawer'),
+        title: const Text('Lines of Destiny'),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
                   onPressed: () => _selectDate(context, 1),
                   child: Text(_selectedDate1 == null
-                      ? 'Select Date 1'
+                      ? 'Set your Birth Day'
                       : "${_selectedDate1!.day.toString().padLeft(2, '0')}-${_selectedDate1!.month.toString().padLeft(2, '0')}-${_selectedDate1!.year}"),
                 ),
                 const SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: _selectedDate1 == null ? null : () => _selectDate(context, 2),
                   child: Text(_selectedDate2 == null
-                      ? 'Select Date 2'
+                      ? 'Set Date of Interest'
                       : "${_selectedDate2!.day.toString().padLeft(2, '0')}-${_selectedDate2!.month.toString().padLeft(2, '0')}-${_selectedDate2!.year}"),
                 ),
               ],
@@ -120,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
-                  'dateResult: $_dateResult',
+                  'Points of Destiny: $_dateResult',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
